@@ -1,0 +1,202 @@
+[
+  {
+    "firstName": "Burnett",
+    "middleName": "Chaney",
+    "lastName": "Chandler",
+    "email": "taylordurham@buzzmaker.com",
+    "phoneNumber": 9105743069,
+    "userDetails": {
+      "ucn": 8174022315,
+      "address": "Hawaii",
+      "country": "Cayman Islands",
+      "city": "Sunwest",
+      "cityPostCode": 9725,
+      "street": "Ocean Parkway"
+    },
+    "userCredentials": {
+      "username": "taylordurham@buzzmaker.com",
+      "password": "goodwincolon@waterbaby.com",
+      "firstTimeLogin": true
+    }
+  },
+  {
+    "firstName": "Dodson",
+    "middleName": "Hall",
+    "lastName": "Rivera",
+    "email": "jeannettefarmer@quarx.com",
+    "phoneNumber": 9605743476,
+    "userDetails": {
+      "ucn": 9925332933,
+      "address": "Texas",
+      "country": "Macedonia",
+      "city": "Nipinnawasee",
+      "cityPostCode": 9115,
+      "street": "Lawton Street"
+    },
+    "userCredentials": {
+      "username": "jeannettefarmer@quarx.com",
+      "password": "petersadkins@comtent.com",
+      "firstTimeLogin": true
+    }
+  },
+  {
+    "firstName": "Sabrina",
+    "middleName": "Torres",
+    "lastName": "Singleton",
+    "email": "elizafernandez@providco.com",
+    "phoneNumber": 9874263821,
+    "userDetails": {
+      "ucn": 9584703981,
+      "address": "Alabama",
+      "country": "Costa Rica",
+      "city": "Libertytown",
+      "cityPostCode": 8854,
+      "street": "Centre Street"
+    },
+    "userCredentials": {
+      "username": "elizafernandez@providco.com",
+      "password": "rondacarter@mangelica.com",
+      "firstTimeLogin": true
+    }
+  },
+  {
+    "firstName": "Camille",
+    "middleName": "Becker",
+    "lastName": "Cervantes",
+    "email": "cherrywhitaker@acusage.com",
+    "phoneNumber": 9514013254,
+    "userDetails": {
+      "ucn": 8135313973,
+      "address": "Wisconsin",
+      "country": "Ghana",
+      "city": "Stewart",
+      "cityPostCode": 9954,
+      "street": "Canarsie Road"
+    },
+    "userCredentials": {
+      "username": "cherrywhitaker@acusage.com",
+      "password": "maloneherman@kyagoro.com",
+      "firstTimeLogin": true
+    }
+  },
+  {
+    "firstName": "Oliver",
+    "middleName": "Wolfe",
+    "lastName": "Hood",
+    "email": "spenceboone@steeltab.com",
+    "phoneNumber": 9794473835,
+    "userDetails": {
+      "ucn": 9185112196,
+      "address": "Maine",
+      "country": "Georgia",
+      "city": "Grill",
+      "cityPostCode": 8304,
+      "street": "Gerald Court"
+    },
+    "userCredentials": {
+      "username": "spenceboone@steeltab.com",
+      "password": "frankwebb@vortexaco.com",
+      "firstTimeLogin": true
+    }
+  },
+  {
+    "firstName": "Pearson",
+    "middleName": "Bridges",
+    "lastName": "Murphy",
+    "email": "frostsoto@ovium.com",
+    "phoneNumber": 9724693138,
+    "userDetails": {
+      "ucn": 9114532837,
+      "address": "Federated States Of Micronesia",
+      "country": "Myanmar",
+      "city": "Juntura",
+      "cityPostCode": 8174,
+      "street": "Hendrix Street"
+    },
+    "userCredentials": {
+      "username": "frostsoto@ovium.com",
+      "password": "osbornkirkland@maroptic.com",
+      "firstTimeLogin": true
+    }
+  },
+  {
+    "firstName": "Combs",
+    "middleName": "Gilliam",
+    "lastName": "Warner",
+    "email": "nikkirutledge@pathways.com",
+    "phoneNumber": 9345562224,
+    "userDetails": {
+      "ucn": 8495673795,
+      "address": "Washington",
+      "country": "Rwanda",
+      "city": "Spelter",
+      "cityPostCode": 8394,
+      "street": "Box Street"
+    },
+    "userCredentials": {
+      "username": "nikkirutledge@pathways.com",
+      "password": "jeannineshelton@pharmacon.com",
+      "firstTimeLogin": true
+    }
+  },
+  {
+    "firstName": "Mcdaniel",
+    "middleName": "Miranda",
+    "lastName": "Wilkins",
+    "email": "peggyjackson@powernet.com",
+    "phoneNumber": 9515942043,
+    "userDetails": {
+      "ucn": 8165702739,
+      "address": "Virginia",
+      "country": "Central African Republic",
+      "city": "Grenelefe",
+      "cityPostCode": 8745,
+      "street": "Kenmore Terrace"
+    },
+    "userCredentials": {
+      "username": "peggyjackson@powernet.com",
+      "password": "corneliamunoz@sloganaut.com",
+      "firstTimeLogin": true
+    }
+  },
+  {
+    "firstName": "Elva",
+    "middleName": "Pruitt",
+    "lastName": "Jacobson",
+    "email": "gloverstanley@diginetic.com",
+    "phoneNumber": 9604922010,
+    "userDetails": {
+      "ucn": 8774283243,
+      "address": "Mississippi",
+      "country": "Yugoslavia",
+      "city": "Onton",
+      "cityPostCode": 8034,
+      "street": "Oriental Boulevard"
+    },
+    "userCredentials": {
+      "username": "gloverstanley@diginetic.com",
+      "password": "drakeestes@jamnation.com",
+      "firstTimeLogin": true
+    }
+  },
+  {
+    "firstName": "Kris",
+    "middleName": "Delacruz",
+    "lastName": "Brennan",
+    "email": "guerragay@shepard.com",
+    "phoneNumber": 8705782547,
+    "userDetails": {
+      "ucn": 8124862526,
+      "address": "Guam",
+      "country": "France",
+      "city": "Hannasville",
+      "cityPostCode": 9895,
+      "street": "Seagate Terrace"
+    },
+    "userCredentials": {
+      "username": "guerragay@shepard.com",
+      "password": "betsyfox@zilidium.com",
+      "firstTimeLogin": true
+    }
+  }
+]

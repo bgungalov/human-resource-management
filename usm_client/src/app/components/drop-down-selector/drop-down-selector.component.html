@@ -1,0 +1,8 @@
+<mat-form-field appearance="outline">
+    <mat-label>{{defaultLabel}}</mat-label>
+    <mat-select (selectionChange)="onSelectionChange($event)" [(value)]="defaultValue">
+        <mat-option *ngFor="let option of options" [value]="option.value">
+            {{option.viewValue}}
+        </mat-option>
+    </mat-select>
+</mat-form-field>

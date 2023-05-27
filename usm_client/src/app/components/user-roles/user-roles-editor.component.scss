@@ -1,0 +1,37 @@
+.parent {
+  // vertical-align: top;
+  // text-align: right;
+  // position: relative;
+  display: flex;
+  justify-content: center;
+  margin: 1rem;
+}
+
+.child {
+  align-items: center;
+  display: inline-block;
+  margin-right: 2vw;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.btn-load-data {
+  vertical-align: top;
+  border: 2px solid var(--primary-dark);
+  vertical-align: middle;
+}
+
+.btn-close {
+  top: 0;
+  right: 0;
+  position: absolute;
+  z-index: 1000;
+}
+
+.btn-close:hover {
+  background-color: var(--button-hover-light);
+}
+
+.role-editor-body {
+  padding-top: 50px;
+}

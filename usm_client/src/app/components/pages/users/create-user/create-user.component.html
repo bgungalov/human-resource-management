@@ -1,0 +1,81 @@
+<div class="update-user-form">
+    <mat-card class="form-card">
+        <mat-card-content>
+            <div class="header">
+                <p>Create New User</p>
+            </div>
+            <mat-error *ngIf="saveUserForm.invalid">
+                <p>Wrong details!<br />
+                    Please fill correct information!</p>
+            </mat-error>
+            <form (ngSubmit)="onSaveUser()" name="saveUserForm" [formGroup]="saveUserForm">
+                <div class="form-container">
+                    <mat-form-field class="full-width" appearance="outline">
+                        <mat-label>First Name</mat-label>
+                        <input formControlName="firstName" matInput placeholder="Enter First Name" required />
+                        <mat-error *ngIf="!saveUserForm.controls['firstName'].valid">
+                            First Name is required
+                        </mat-error>
+                    </mat-form-field>
+                    <mat-form-field class="full-width" appearance="outline">
+                        <mat-label>Middle Name</mat-label>
+                        <input formControlName="middleName" matInput placeholder="Enter Middle Name" />
+                    </mat-form-field>
+                    <mat-form-field class="full-width" appearance="outline">
+                        <mat-label>Last Name</mat-label>
+                        <input formControlName="lastName" matInput placeholder="Enter Last Name" required />
+                        <mat-error *ngIf="!saveUserForm.controls['lastName'].valid">
+                            Last Name is required
+                        </mat-error>
+                    </mat-form-field>
+                    <mat-form-field class="full-width" appearance="outline">
+                        <mat-label>Email</mat-label>
+                        <input formControlName="email" matInput placeholder="Enter Email" required />
+                        <mat-error *ngIf="!saveUserForm.controls['email'].valid">
+                            Email is required
+                        </mat-error>
+                    </mat-form-field>
+                    <mat-form-field class="full-width" appearance="outline">
+                        <mat-label>Phone Number</mat-label>
+                        <input formControlName="phoneNumber" matInput placeholder="Phone Number" required />
+                        <mat-error *ngIf="!saveUserForm.controls['phoneNumber'].valid">
+                            Phone Number is required
+                        </mat-error>
+                    </mat-form-field>
+                    <mat-form-field class="full-width" appearance="outline">
+                        <mat-label>UCN</mat-label>
+                        <input formControlName="ucn" matInput placeholder="UCN" required />
+                        <mat-error *ngIf="!saveUserForm.controls['ucn'].valid">
+                            UCN must be 10 digits
+                        </mat-error>
+                    </mat-form-field>
+                    <mat-form-field class="full-width" appearance="outline">
+                        <mat-label>Address</mat-label>
+                        <input formControlName="address" matInput placeholder="address" />
+                    </mat-form-field>
+                    <mat-form-field class="full-width" appearance="outline">
+                        <mat-label>Country</mat-label>
+                        <input formControlName="country" matInput placeholder="country" />
+                    </mat-form-field>
+                    <mat-form-field class="full-width" appearance="outline">
+                        <mat-label>City</mat-label>
+                        <input formControlName="city" matInput placeholder="city" />
+                    </mat-form-field>
+                    <mat-form-field class="full-width" appearance="outline">
+                        <mat-label>City Post Code</mat-label>
+                        <input formControlName="cityPostCode" matInput placeholder="cityPostCode" />
+                    </mat-form-field>
+                    <mat-form-field class="full-width" appearance="outline">
+                        <mat-label>Street</mat-label>
+                        <input formControlName="street" matInput placeholder="street" />
+                    </mat-form-field>
+                </div>
+                <div class="buttons-container">
+                    <button mat-stroked-button class="btn-primary-error" type="submit">Save</button>
+                    <button mat-stroked-button class="btn-primary-success" (click)="onClickBackButton()">Cancel</button>
+                    <button mat-stroked-button class="btn-primary-reset" type="reset">Clear Form</button>
+                </div>
+            </form>
+        </mat-card-content>
+    </mat-card>
+</div>

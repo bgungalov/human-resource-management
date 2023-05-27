@@ -1,0 +1,22 @@
+<div *ngIf="statusData; else statusDown">
+    <div
+        *ngIf="tokenUserCurrentRoles === 'ROLE_ADMIN' || tokenUserCurrentRoles === 'ROLE_ADMIN_HELPER'; else basicRole">
+        <svg height="100" width="100" class="non-blinking">
+            <circle matTooltip="Status: UP / DB Status: {{databaseStatus}} / Disk Space Status: {{diskSpaceStatus}}"
+                cx="50" cy="50" r="7" fill="green" />
+        </svg>
+    </div>
+    <ng-template #basicRole>
+        <div>
+            <svg height="100" width="100" class="non-blinking">
+                <circle matTooltip="Status: UP" cx="50" cy="50" r="7" fill="green" />
+            </svg>
+        </div>
+    </ng-template>
+</div>
+
+<ng-template #statusDown>
+    <svg height="100" width="100" class="blinking">
+        <circle matTooltip="Status: DOWN" cx="50" cy="50" r="7" fill="red" />
+    </svg>
+</ng-template>

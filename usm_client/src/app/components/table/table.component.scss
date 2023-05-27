@@ -1,0 +1,30 @@
+table {
+  width: 100%;
+}
+
+th,
+td {
+  padding: 10px !important;
+}
+
+mat-form-field {
+  width: 30%;
+}
+
+.text-right {
+  text-align: right !important;
+}
+
+.clickableCell {
+  cursor: pointer;
+}
+
+.clickableCell:hover {
+  cursor: pointer;
+  background-color: var(--clickable-table-cell);
+}
+
+.dot {
+ align-items: center;
+ vertical-align: middle;
+}

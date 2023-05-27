@@ -1,0 +1,46 @@
+<div
+  class="btn-group"
+  role="group"
+>
+  <input
+    (change)="onToggleChange($event)"
+    type="radio"
+    class="btn-check"
+    name="btnradio"
+    id="btnradio2"
+    autocomplete="off"
+    [checked]="isTableView"
+  />
+  <label class="btn btn-light" for="btnradio2"
+    ><mat-icon class="mat-icons"> table_rows</mat-icon></label
+  >
+  <input
+    (change)="onToggleChange($event)"
+    type="radio"
+    class="btn-check"
+    name="btnradio"
+    id="btnradio1"
+    autocomplete="off"
+    [checked]="!isTableView"
+  />
+  <label class="btn btn-light" for="btnradio1"
+    ><mat-icon class="mat-icons">grid_view</mat-icon></label
+  >
+</div>
+
+<app-menu
+  *ngIf="isTableView"
+  class="btn-over-table"
+  [menuData]="menuData"
+  (action)="action($event.action)"
+>
+  <mat-icon class="mat-icons">file_download</mat-icon>
+  Export As
+</app-menu>
+
+<button (click)="navigateToCreateUserPage()" mat-button class="btn-over-table">
+  <mat-icon class="mat-icons">add</mat-icon>
+  Add New user
+</button>
+
+<app-user-list [isTableView]="isTableView" id="users-table"></app-user-list>

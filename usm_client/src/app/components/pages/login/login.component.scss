@@ -1,0 +1,62 @@
+.login-form{
+    height: min-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+
+mat-card {
+  max-width: 100%;
+  margin: 1em auto;
+  text-align: center;
+  max-height: 50%;
+  top: 30%;
+}
+
+.header {
+  text-align: center;
+}
+.full-width {
+  width: 100%;
+}
+
+.button-row {
+  padding-top: 5px;
+}
+
+.button-row a {
+  margin-right: 8px;
+  text-align: center;
+}
+
+.emailInput {
+  padding-top: 10px;
+}
+
+.contentBody {
+  padding: 60px 1rem;
+  background: black;
+  display: block;
+}
+
+.aLink {
+  float: right;
+  padding-right: 60px;
+  text-decoration: none;
+}
+
+.login-page-logo img{
+  width: 200px;
+  height: 200px;
+  padding-top: 20px;
+  margin: auto;
+  display: block;
+}
+
+.login-page-logo h1{
+  margin-top: 20px;
+  text-align: center;
+  font-weight: 700;
+  font-style: italic;
+}

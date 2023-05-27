@@ -1,0 +1,32 @@
+.router-wrapper {
+  padding: 50px;
+}
+
+.navbar-item {
+  color: black;
+}
+
+.navbar-item:hover {
+  font-weight: bold;
+}
+
+.is-active {
+  font-weight: bold;
+  color: rgb(53, 53, 53);
+  opacity: 0.8;
+}
+
+.navbar {
+  background-color: rgb(255, 179, 167) !important;
+}
+
+.mat-icons {
+  vertical-align: bottom;
+}
+
+.fixed-button-go-up {
+  position: fixed;
+  bottom: 2rem;
+  right: 1.5rem;
+  z-index: 1;
+}

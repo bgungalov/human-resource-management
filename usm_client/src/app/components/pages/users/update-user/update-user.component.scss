@@ -1,0 +1,50 @@
+.update-user-form {
+  height: min-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  max-width: fit-content;
+  max-height: fit-content;
+  min-width: 310px;
+}
+
+mat-card {
+  max-width: 80%;
+  text-align: left;
+  max-height: 50%;
+  top: 50%;
+}
+
+.header {
+  color: var(--primary-dark);
+  text-align: center;
+  font-weight: 500;
+  font-size: large;
+}
+
+mat-error p {
+  text-align: center;
+  font-weight: 500;
+  font-size: medium;
+}
+
+.update-user-form button {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-right: 1vw;
+}
+
+.form-container mat-form-field {
+  margin: 1vw;
+}
+
+.buttons-container {
+  margin: auto;
+  justify-content: center;
+}
+
+.update-user-form mat-focused mat-form-field-label{
+  color: var(--primary-dark);
+}

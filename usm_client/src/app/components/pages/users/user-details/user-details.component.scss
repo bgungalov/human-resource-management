@@ -1,0 +1,125 @@
+.card-subtitle {
+  font-style: italic;
+  font-weight: 500;
+  color: red;
+}
+
+.nested-card mat-card {
+  text-align: left;
+  font-size: medium;
+  outline: 2px solid var(--primary-light);
+  box-shadow: 0px 5px 5px var(--primary);
+}
+
+.nested-card mat-divider {
+  color: red;
+  background-color: red;
+  height: 1px;
+}
+
+.accordion mat-panel-title {
+  font-weight: 500;
+}
+
+.accordion mat-expansion-panel-body{
+  margin: 1rem !important;
+}
+
+.mat-expansion-panel-body {
+  padding: 0;
+}
+
+mat-card-header mat-card-title {
+  font-size: large;
+}
+
+.card-title-user {
+  padding-left: 1rem;
+  font-weight: bold;
+}
+
+.card-detail-info {
+  padding-left: 0.5rem;
+  padding-top: 0.5rem;
+}
+
+.not-active-role{
+  padding-left: 1rem;
+}
+
+.card-open-messages {
+  padding-left: .5rem;
+}
+
+.card mat-icon {
+  vertical-align: middle;
+}
+
+.avatar-image {
+  background-image: url("../../../../../assets/avatar.svg");
+}
+
+mat-card-header mat-card-subtitle {
+  font-size: medium;
+}
+
+mat-card-actions {
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  padding-top: 3vh;
+}
+
+.btn-edit-roles {
+  background-color: var(--white);
+  color: var(--red);
+}
+
+.open-messages {
+  background-color: var(--white);
+  color: var(--blue);
+}
+
+.open-messages:hover {
+  background-color: var(--white);
+  color: var(--light-blue);
+}
+
+.btn-edit-roles:hover {
+  background-color: var(--button-hover-light);
+  color: var(--red);
+}
+
+.current-role-container {
+  font-weight: 500;
+  color: var(--green);
+}
+
+.current-role-container:hover {
+  border-radius: 10px;
+}
+
+.btn-primary-error {
+  color: var(--white);
+  background-color: var(--red);
+}
+
+.btn-primary-success {
+  color: var(--white);
+  background-color: var(--green);
+}
+
+.margin {
+  margin: 2px;
+}
+
+.mat-card {
+  max-width: 400px;
+  margin: auto;
+  // text-align: center;
+}
+
+.card-subtitle {
+  margin: auto !important;
+  color: red;
+}

@@ -1,0 +1,21 @@
+.tab-icon {
+  margin-right: 8px;
+}
+
+.parent {
+  vertical-align: top;
+  text-align: right;
+}
+
+.child {
+  align-items: center;
+  display: inline-block;
+  margin-right: 2vw;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.btn-load-data {
+  vertical-align: top;
+  border: 2px solid var(--primary-dark);
+}

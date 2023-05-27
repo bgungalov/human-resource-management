@@ -1,0 +1,62 @@
+<nav class="navbar sticky-top navbar-light bg-light navbar-expand-lg">
+  <div class="container-fluid ms-auto">
+    <button
+      (click)="isCollapsed = !isCollapsed"
+      data-toggle="collapse"
+      data-target="#navbarNavAltMarkup"
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div
+      [ngbCollapse]="isCollapsed"
+      class="collapse navbar-collapse"
+      id="navbarNavAltMarkup"
+    >
+      <div *ngFor="let item of appLinks" class="navbar-nav">
+        <a
+          (click)="onCollapse()"
+          class="navbar-brand navbar-item"
+          routerLink="{{ item.path }}"
+          [routerLinkActive]="'is-active'"
+          id="{{ item.title }}"
+        >
+          <mat-icon class="mat-icons">{{ item.icon }}</mat-icon>
+          {{ item.title }}
+        </a>
+      </div>
+      <div class="navbar-nav ms-auto d-flex flex-row bd-highlighte">
+        <app-notifications-component></app-notifications-component>
+        <button mat-button [matMenuTriggerFor]="menu">
+          <mat-icon>person</mat-icon>Hi, {{ tokenUserFirstName }}!
+        </button>
+        <mat-menu #menu="matMenu">
+          <button (click)="handleLogout()" mat-button class="btn-logout">
+            <mat-icon>logout</mat-icon>
+            Logout
+          </button>
+        </mat-menu>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<button
+  *ngIf="isShow"
+  class="fixed-button-go-up"
+  (click)="gotoTop()"
+  mat-fab
+  color="primary"
+>
+  <mat-icon>arrow_upward</mat-icon>
+</button>
+
+<div class="router-wrapper">
+  <router-outlet></router-outlet>
+</div>

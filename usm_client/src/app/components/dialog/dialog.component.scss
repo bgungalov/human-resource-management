@@ -1,0 +1,19 @@
+.btn-success {
+  background-color: var(--btn-primary-error);
+  color: var(--white);
+}
+
+.btn-cancel {
+  background-color: var(--primary-light);
+  color: var(--white);
+}
+
+.dialog h1 {
+  padding-top: 1vh;
+  text-align: center;
+  font-weight: 500;
+}
+
+.dialog p {
+  font-size: medium;
+}

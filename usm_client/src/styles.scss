@@ -1,0 +1,65 @@
+@import "./css/card";
+@import "bootstrap/scss/bootstrap";
+
+body {
+  // background:linear-gradient(45deg, #EEEEEE, #FAF8F9, #FFFFFF);
+  background: radial-gradient(circle at 18.7% 37.8%, rgb(250, 250, 250) 0%, rgb(225, 234, 238) 90%);
+}
+
+:root {
+  --primary: #525050;
+  --primary-light: #969696;
+  --primary-dark: #2c2c2c;
+  --success: #008000;
+  --white: rgb(255, 255, 255);
+  --btn-primary-error: #ff0000;
+  --btn-primary-success: #32cd32;
+  --green: #008000;
+  --btn-primary-reset: #ffff;
+  --primary-gradient: linear-gradient(
+    55deg,
+    hsl(0deg 0% 60%) 0%,
+    hsl(344deg 0% 58%) 11%,
+    hsl(344deg 0% 57%) 19%,
+    hsl(344deg 0% 55%) 28%,
+    hsl(344deg 0% 52%) 37%,
+    hsl(344deg 0% 46%) 50%,
+    hsl(344deg 0% 41%) 68%,
+    hsl(0deg 0% 35%) 100%
+  );
+  --clickable-table-cell: rgb(243, 243, 243);
+  --red: #ff0000;
+  --button-hover-light: #e2e2e2;
+  --blue: #0047ab;
+  --light-blue: #0096ff;
+  --dirty-white: rgb(235, 235, 235);
+}
+
+.btn-primary-error {
+  color: var(--white);
+  font-weight: 500;
+  background-color: var(--btn-primary-error);
+}
+
+.btn-primary-success {
+  color: var(--white);
+  font-weight: 500;
+  background-color: var(--btn-primary-success);
+}
+
+.btn-primary-reset {
+  color: var(---primary-dark);
+  font-weight: 500;
+  background-color: var(--btn-primary-reset);
+}
+
+.mat-tab-body-content {
+  overflow: hidden !important;
+}
+
+mat-form-field.message-input-field
+  > div
+  > div.mat-form-field-flex
+  > div.mat-form-field-outline.mat-form-field-outline-thick {
+  color: var(--primary-dark);
+}

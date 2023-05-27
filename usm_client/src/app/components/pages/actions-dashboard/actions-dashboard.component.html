@@ -1,0 +1,13 @@
+<app-menu class="btn-over-table" [menuData]="menuData" (action)="action($event.action)">
+    <mat-icon class="mat-icons">file_download</mat-icon>
+    Export As
+</app-menu>
+
+<button (click)="goToStatisticCharts()" mat-button class="btn-over-table">
+    <mat-icon class="mat-icons">query_stats</mat-icon>
+    View Statistic Charts
+</button>
+
+<app-custom-table id="actions-dashboard" [tableData]="actions" [tableColumns]="columns" [isPageable]="true"
+    [isFilterable]="true" (sort)="sortData($event)">
+</app-custom-table>

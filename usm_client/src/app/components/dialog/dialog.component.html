@@ -1,0 +1,21 @@
+<div class="dialog">
+    <mat-progress-bar mode="indeterminate">
+    </mat-progress-bar>
+    <h1 mat-dialog-title>{{ dialogData.dialogHeader }}</h1>
+    <div mat-dialog-content *ngIf="dialogData.dialogContent">
+        <p>{{ dialogData.dialogContent }}</p>
+    </div>
+    <div mat-dialog-content *ngIf="dialogData.dialogSecondContent">
+        <p>{{ dialogData.dialogSecondContent }}</p>
+    </div>
+    <div mat-dialog-actions>
+        <button mat-button (click)="handleDialogSubmit()" class="btn-success"
+            [disabled]="stateService.isAsyncOperationRunning$ | async">
+            {{ dialogData.confirmButtonLabel }}
+        </button>
+        <button *ngIf="dialogData.cancelButtonLabel" mat-button cdkFocusInitial (click)="closeDialog()" class="btn-cancel"
+            [disabled]="stateService.isAsyncOperationRunning$ | async">
+            {{ dialogData.cancelButtonLabel }}
+        </button>
+    </div>
+</div>

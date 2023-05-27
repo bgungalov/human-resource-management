@@ -1,0 +1,73 @@
+<div class="messages-container" *ngIf="communication">
+  <p class="chat-username">
+    <button
+      (click)="navigateToUserDetails(otherUser.id)"
+      mat-raised-button
+      class="btn-view-profile"
+      color="link"
+    >
+      <mat-icon>person</mat-icon> {{ otherUser.firstName }}
+      {{ otherUser.lastName }}
+    </button>
+  </p>
+
+  <div class="messages-list" #scroll>
+    <div *ngFor="let message of communication.messages">
+      <div
+        *ngIf="communication.messages && communication.messages.length"
+        class="message"
+        [ngClass]="message.senderId === currentUser.id ? 'right' : 'left'"
+      >
+        <div class="message_body">
+          <a [ngClass]="message.senderId === currentUser.id ? 'right' : 'left'">
+            {{ message.body }}
+          </a>
+        </div>
+        <div
+          class="message_owner"
+          *ngIf="message.senderId === currentUser.id; else ownerSender"
+        >
+          <small> {{ currentUser.firstName }} </small>
+        </div>
+        <ng-template #ownerSender>
+          <div class="message_owner">
+            <small> {{ otherUser.firstName }} </small>
+          </div>
+        </ng-template>
+        <div class="message_date">
+          <small class="only-show-on-hover">
+            {{ message.updateDate | date : "MMM d, y, h:mm a" }}
+          </small>
+        </div>
+      </div>
+    </div>
+  </div>
+  <form
+    (ngSubmit)="submitMessage()"
+    name="sendMessageForm"
+    [formGroup]="sendMessageForm"
+  >
+    <div class="form-container">
+      <mat-form-field
+        class="full-width message-input-field"
+        appearance="outline"
+      >
+        <input
+          matInput
+          formControlName="message"
+          placeholder="Type message..."
+          required
+        />
+        <button
+          [disabled]="sendMessageForm.invalid"
+          class="btn-send-message"
+          matSuffix
+          mat-icon-button
+          type="submit"
+        >
+          <mat-icon>send</mat-icon>
+        </button>
+      </mat-form-field>
+    </div>
+  </form>
+</div>

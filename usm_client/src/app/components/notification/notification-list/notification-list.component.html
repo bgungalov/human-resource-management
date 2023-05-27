@@ -1,0 +1,25 @@
+<button class="btn-notification" mat-button [matMenuTriggerFor]="menu">
+  <mat-icon
+    [ngClass]="
+      !hasNewNotification ? 'icon-notification' : 'icon-new-notification'
+    "
+    >{{
+      !hasNewNotification ? notificationsIcon : notificationActive
+    }}</mat-icon
+  >
+
+  <!-- <mat-icon
+    class="icon-notification"
+    *ngIf="!hasNewNotification; else hasNew"
+    >{{ notificationsIcon }}</mat-icon
+  >
+  <ng-template #hasNew>
+    <mat-icon class="icon-new-notification">{{ notificationActive }}</mat-icon>
+  </ng-template> -->
+</button>
+<mat-menu #menu="matMenu">
+  <button mat-menu-item *ngFor="let item of menuItems" (click)="onClick(item)">
+    <mat-icon> {{ item.icon || item.svgIcon }}</mat-icon
+    >{{ item.label }}
+  </button>
+</mat-menu>
