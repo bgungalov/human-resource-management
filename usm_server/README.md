@@ -1,4 +1,4 @@
-Using the User Management Service (UMS)
+Human Resource Management
 ==============================================================
 
 * *Biser Gungalov* - *Initial work*
